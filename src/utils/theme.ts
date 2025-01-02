@@ -8,11 +8,11 @@ export const checkValidTheme = (themeValue?: string) => {
   const selectedTheme = getLocalStorage(themeValue ?? LOCAL_STORAGE_KEY.THEME);
 
   if (!selectedTheme) {
-    return THEME_TYPE.LIGHT;
+    return THEME_TYPE.DARK;
   }
 
   if (selectedTheme !== THEME_TYPE.LIGHT && selectedTheme !== THEME_TYPE.DARK) {
-    return THEME_TYPE.LIGHT;
+    return THEME_TYPE.DARK;
   }
 
   return selectedTheme;

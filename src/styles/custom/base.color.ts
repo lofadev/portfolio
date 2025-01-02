@@ -1,9 +1,11 @@
 export const baseLightTheme = {
-  primary: '#13C4CE',
-  secondary: '#3374CD',
+  primary: '#5BADFF',
+  secondary: '#1373D1',
 
   white: '#FFFFFF',
   transparent: 'transparent',
+
+  border: '#C1C2D3',
 
   bgPrimary: '#FFFFFF',
   bgWrapper: '#F6F6F6',
@@ -17,10 +19,9 @@ export type BaseTheme = typeof baseLightTheme;
 
 export const baseDarkTheme: BaseTheme = {
   ...baseLightTheme,
-  primary: '#13C4CE',
 
-  bgPrimary: '#090D1F',
-  bgWrapper: '#090d1fe3',
+  bgPrimary: '#2A2A2A',
+  bgWrapper: '#161513',
 
   textPrimary: '#FFFFFF',
   textSecondary: '#C0C5D0',

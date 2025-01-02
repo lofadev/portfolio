@@ -56,5 +56,6 @@ export const GlobalStyled = createGlobalStyle`
     position: relative;
     background-color: ${({ theme }) => theme.base.bgWrapper};
     color: ${({ theme }) => theme.base.textPrimary};
+    font-family: "Plus Jakarta Sans", serif;
   }
 `;

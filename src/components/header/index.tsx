@@ -1,28 +1,36 @@
+import { Flex } from 'antd';
 import styled from 'styled-components';
 import { Container } from '../container';
-import { ThemeControl } from '../theme-control';
-import { Flex } from 'antd';
-import { LanguageControl } from '../language-control';
+import { menu } from './menu';
 
 const HeaderStyled = styled.header`
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  margin-top: 30px;
+  padding: 0 50px;
+  height: 66px;
   background-color: ${({ theme }) => theme.base.bgPrimary};
+  display: flex;
+  align-items: center;
+  border: 2px solid ${({ theme }) => theme.base.border};
+  border-radius: 12px;
+`;
+
+const Menu = styled.ul`
+  display: flex;
+  gap: 32px;
 `;
 
 export const Header = () => {
   return (
     <Container>
-      <HeaderStyled>
-        <h1>Header</h1>
-        <Flex gap={8}>
-          <LanguageControl />
-          <ThemeControl />
-        </Flex>
-      </HeaderStyled>
+      <Flex justify="center" align="center">
+        <HeaderStyled>
+          <Menu>
+            {menu.map((item) => (
+              <li key={item.id}>{item.title}</li>
+            ))}
+          </Menu>
+        </HeaderStyled>
+      </Flex>
     </Container>
   );
 };

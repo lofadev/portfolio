@@ -9,6 +9,7 @@ import i18n from './configs/i18n';
 import { AppRoutes } from './routes';
 import { store } from './store';
 import { ConfigProvider, GlobalStyled, ThemeProvider } from './styles';
+import ParticlesBg from './components/particles';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
               <ThemeProvider>
                 <GlobalStyled />
                 <ToastMessage />
+                <ParticlesBg />
                 <React.Suspense fallback={<Suspense />}>
                   <AppRoutes />
                 </React.Suspense>
