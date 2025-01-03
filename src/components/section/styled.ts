@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
+  padding: 50px 0;
   background-color: rgba(42, 42, 42, 0.5);
-  padding: 50px;
   border-radius: 8px;
+  margin-bottom: 30px;
 `;
 
 export const Title = styled.h2`
@@ -13,22 +14,7 @@ export const Title = styled.h2`
   text-transform: uppercase;
   font-weight: bold;
   background: ${({ theme }) => `-webkit-linear-gradient(white, ${theme.base.primary})`};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-`;
-
-export const Skill = styled.div`
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  row-gap: 40px;
-`;
-
-export const WrapperIcon = styled.span`
-  display: inline-block;
-  margin: 0 10px;
-
-  svg {
-    width: 70px;
-    height: 70px;
-  }
 `;

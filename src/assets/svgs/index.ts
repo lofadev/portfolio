@@ -2,9 +2,9 @@
 import Dark from './dark.svg?react';
 import Light from './light.svg?react';
 import Download from './download.svg?react';
+import Mail from './mail.svg?react';
 import HTML from './html.svg?react';
 import CSS from './css.svg?react';
-import SASS from './sass.svg?react';
 import STYLED_COMPONENTS from './styled-components.svg?react';
 import TAILWINDCSS from './tailwind-css.svg?react';
 import JAVASCRIPT from './javascript.svg?react';
@@ -25,9 +25,9 @@ export {
   Dark,
   Light,
   Download,
+  Mail,
   HTML,
   CSS,
-  SASS,
   STYLED_COMPONENTS,
   TAILWINDCSS,
   JAVASCRIPT,

@@ -1,7 +1,6 @@
 import {
   HTML,
   CSS,
-  SASS,
   STYLED_COMPONENTS,
   TAILWINDCSS,
   JAVASCRIPT,
@@ -27,10 +26,6 @@ export const skills = [
   {
     name: 'Css',
     icon: CSS,
-  },
-  {
-    name: 'Sass',
-    icon: SASS,
   },
   {
     name: 'Styled Components',

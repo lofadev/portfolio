@@ -1,16 +1,16 @@
-import { Tooltip } from 'antd';
+import { Flex, Tooltip } from 'antd';
 import { skills } from './constants';
-import { Skill, Title, Wrapper, WrapperIcon } from './styled';
+import { Skill, WrapperIcon } from './styled';
+import Section from '~/components/section';
 
 const Skills = () => {
   return (
-    <Wrapper>
-      <Title>Skills</Title>
+    <Section title="Skills">
       <Skill>
         {skills.map((item) => {
           const Icon = item.icon;
           return (
-            <div key={item.name}>
+            <Flex key={item.name} justify="center">
               <Tooltip title={item.name} placement="top">
                 {
                   <WrapperIcon>
@@ -18,11 +18,11 @@ const Skills = () => {
                   </WrapperIcon>
                 }
               </Tooltip>
-            </div>
+            </Flex>
           );
         })}
       </Skill>
-    </Wrapper>
+    </Section>
   );
 };
 

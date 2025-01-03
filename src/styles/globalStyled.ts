@@ -1,12 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
-export const GlobalStyled = createGlobalStyle`
+export const GlobalStyled = createGlobalStyle`${css`
   *,
   *:before,
   *:after {
     box-sizing: border-box;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -56,6 +56,22 @@ export const GlobalStyled = createGlobalStyle`
     position: relative;
     background-color: ${({ theme }) => theme.base.bgWrapper};
     color: ${({ theme }) => theme.base.textPrimary};
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: 'Plus Jakarta Sans', serif;
   }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: ${({ theme }) => theme.base.white};
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: ${({ theme }) => theme.base.primary};
+  }
+`}
 `;

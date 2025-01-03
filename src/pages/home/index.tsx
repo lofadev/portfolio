@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container } from '~/components';
-import Hero from '~/components/hero';
-import Skills from '~/components/skill';
+import Hero from '~/pages/home/components/hero';
+import Skills from './components/skill';
 
 const Wrapper = styled.div``;
 

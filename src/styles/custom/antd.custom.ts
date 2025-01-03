@@ -18,9 +18,12 @@ export const antdCustomLight: ThemeConfig = {
     Button: {
       paddingInline: 20,
       paddingBlock: 16,
-      borderRadius: 100,
+      borderRadius: 8,
       defaultHoverColor: baseDarkTheme.primary,
       defaultHoverBorderColor: baseDarkTheme.primary,
+      defaultBg: baseDarkTheme.transparent,
+      defaultColor: baseDarkTheme.textPrimary,
+      defaultHoverBg: baseDarkTheme.transparent,
     },
   },
 };

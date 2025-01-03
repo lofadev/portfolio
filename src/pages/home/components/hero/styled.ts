@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from '../button';
+import { Button } from '../../../../components/button';
 
 export const Wrapper = styled.section`
   display: grid;
@@ -12,13 +12,13 @@ export const Wrapper = styled.section`
 `;
 
 export const Desc = styled.h2`
-  margin-top: 20px;
   line-height: 1.5;
   padding-right: 40px;
+  margin-bottom: 12px;
 `;
 
 export const ButtonStyled = styled(Button)`
-  &:hover {
+  &.ant-btn-default:hover {
     path {
       fill: ${({ theme }) => theme.base.primary};
       transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
